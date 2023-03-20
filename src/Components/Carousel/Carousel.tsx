@@ -25,7 +25,7 @@ export const Carousel = () => {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       paginate(1);
-    }, 6000);
+    }, 4000);
     return () => {
       clearTimeout(timeOut);
     };
@@ -70,17 +70,20 @@ export const Carousel = () => {
               ease: "easeInOut",
               duration: 1,
             }}
+            className="h-[400px] sm:h-[550px] md:h-[650px] w-screen max-w-5xl"
           >
             <Image
               src={data[heroImageNumber]}
               alt="Carousel"
+              fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 1024px) 100vw"
+              quality={50}
             />
           </motion.div>
         </AnimatePresence>
 
-        <ul className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 p-1 sm:bottom-6">
+        <ul className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 p-1">
           {data?.map((slide, idx: number) => (
             <li
               key={idx}
@@ -89,7 +92,7 @@ export const Carousel = () => {
                 setHeroImage([idx, dir]);
               }}
               className={`h-[4px] w-[30px] cursor-pointer bg-black hover:opacity-100 ${
-                isActive(idx) ? "opacity-70" : "opacity-10"
+                isActive(idx) ? "opacity-70" : "opacity-20"
               }`}
             />
           ))}

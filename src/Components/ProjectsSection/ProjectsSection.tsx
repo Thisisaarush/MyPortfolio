@@ -42,6 +42,7 @@ const ProjectsSection = () => {
               fill
               style={{ objectFit: "cover", backgroundPosition: "center" }}
               className="hover:scale-110 transition-transform duration-300 ease-in-out"
+              quality={50}
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
@@ -68,6 +69,7 @@ const ProjectsSection = () => {
               fill
               style={{ objectFit: "cover", backgroundPosition: "center" }}
               className="hover:scale-110 transition-transform duration-300 ease-in-out"
+              quality={50}
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">

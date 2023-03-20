@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navigation />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
       <Footer />
     </>
   );
