@@ -23,7 +23,7 @@ export default function Home() {
         <RainbowPrism />
         <HeroSection />
         <ProjectsSection />
-        <DesignSection />
+        {/* <DesignSection /> */}
       </main>
     </>
   );
