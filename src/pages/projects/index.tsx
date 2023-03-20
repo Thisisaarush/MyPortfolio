@@ -40,6 +40,22 @@ const ProjectsPage = () => {
 
         <div className="max-w-5xl m-auto mt-16 flex flex-col text-xl">
           <Link
+            href="https://mybeesapp.com/"
+            target="_blank"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+          >
+            <span className="font-bold w-1/2 md:w-1/3">MyBees.com</span>
+            <div>
+              <Link
+                href="https://www.ab-inbev.com/"
+                target="_blank"
+                className="font-extralight hover:underline hover:underline-offset-4"
+              >
+                Ab Inbev Company
+              </Link>
+            </div>
+          </Link>
+          <Link
             href="https://shoez-store.vercel.app/"
             target="_blank"
             className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
