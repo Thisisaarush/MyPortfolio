@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 // images
 import ecomm from "../../../public/mockups/ecomm.png";
@@ -9,6 +10,9 @@ import food from "../../../public/mockups/food.png";
 import homeReno from "../../../public/mockups/homeReno.png";
 import ng from "../../../public/mockups/ng.png";
 import smartHome from "../../../public/mockups/smartHome.png";
+
+// animation
+import { CarouselAnimation } from "@/animations/animation";
 
 //images data
 const data = [ecomm, food, homeReno, ng, smartHome];
@@ -46,15 +50,38 @@ export const Carousel = () => {
 
   return (
     <div className="relative mx-auto my-0 h-max max-w-5xl">
-      <div className="relative overflow-hidden h-[400px] sm:h-[550px] md:h-[650px] w-screen max-w-5xl">
-        <Image
-          src={data[heroImageNumber]}
-          alt="Carousel"
-          fill
-          style={{ objectFit: "cover" }}
-          sizes="(max-width: 1024px) 100vw"
-          quality={50}
-        />
+      <div className="relative overflow-hidden">
+        <AnimatePresence initial={false} mode="popLayout" custom={direction}>
+          <motion.div
+            key={heroImageNumber}
+            custom={direction}
+            variants={CarouselAnimation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            onDragEnd={(e, { offset }) => {
+              if (offset.x < 0) paginate(1);
+              else paginate(-1);
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+            }}
+            className="h-[400px] sm:h-[550px] md:h-[650px] w-screen max-w-5xl"
+          >
+            <Image
+              src={data[heroImageNumber]}
+              alt="Carousel"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(max-width: 1024px) 100vw"
+              quality={50}
+            />
+          </motion.div>
+        </AnimatePresence>
 
         <ul className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 p-1">
           {data?.map((slide, idx: number) => (

@@ -22,7 +22,7 @@ const DesignSection = () => {
         </ul>
       </div>
 
-      <Carousel />
+      {/* <Carousel /> */}
     </div>
   );
 };
