@@ -52,22 +52,24 @@ const RainbowPrism = () => {
   const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   }, []);
 
   if (Loading)
     return (
       <div className="text-4xl text-white bg-black z-50 min-h-screen flex justify-center items-center">
         <div className="flex items-center justify-center space-x-2">
-          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-white"></div>
-          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-white"></div>
-          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-white"></div>
+          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-gray-500"></div>
+          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-gray-500"></div>
+          <div className="w-6 h-6 rounded-full animate-pulse dark:bg-gray-500"></div>
         </div>
       </div>
     );
 
   return (
-    <div className="w-screen h-screen -z-50">
+    <div className="w-screen h-screen -z-50 bg-black">
       <Canvas
         dpr={dpr}
         orthographic
