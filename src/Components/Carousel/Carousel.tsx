@@ -59,13 +59,13 @@ export const Carousel = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(e, { offset }) => {
-              if (offset.x < 0) paginate(1);
-              else paginate(-1);
-            }}
+            // drag="x"
+            // dragConstraints={{ left: 0, right: 0 }}
+            // dragElastic={1}
+            // onDragEnd={(e, { offset }) => {
+            //   if (offset.x < 0) paginate(1);
+            //   else paginate(-1);
+            // }}
             transition={{
               ease: "easeInOut",
               duration: 1,
