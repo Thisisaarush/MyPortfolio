@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   return (
     <div className="bg-black bg-opacity-90 text-white uppercase">
       <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-24">
-        <span className="w-1/4 text-gray-300 text-xl font-extralight">
+        <span className="w-1/4 text-gray-300 text-xl font-light">
           Achievements
         </span>
 
@@ -29,21 +29,23 @@ const ProjectsSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row">
-        <div className="relative h-[800px] md:h-[1000px] sm:w-1/2 overflow-hidden">
+      <div className="flex flex-col sm:flex-row m-auto">
+        <div className="relative flex w-full">
           <Link
             href="https://shoez-store.vercel.app/"
             target="_blank"
-            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out relative h-[800px] md:h-[1000px] w-full sm:w-full overflow-hidden"
           >
             <Image
               src={shoe}
               alt="project"
               fill
-              style={{ objectFit: "cover", backgroundPosition: "center" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
               className="hover:scale-110 transition-all duration-300 ease-in-out"
               quality={50}
-              sizes="(max-width: 1024px) 100vw"
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
@@ -51,27 +53,29 @@ const ProjectsSection = () => {
             <Link
               href="https://github.com/Thisisaarush/ShoezStore"
               target="_blank"
-              className="py-1 px-2 text-center font-extralight text-gray-300 hover:underline hover:underline-offset-4 md:text-lg"
+              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4 md:text-lg"
             >
               Source Code
             </Link>
           </div>
         </div>
 
-        <div className="relative h-[800px] md:h-[1000px] sm:w-1/2 overflow-hidden">
+        <div className="relative flex w-full">
           <Link
             href="https://mybeesapp.com/"
             target="_blank"
-            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out relative h-[800px] md:h-[1000px] w-full sm:w-full overflow-hidden"
           >
             <Image
               src={bees}
               alt="project"
               fill
-              style={{ objectFit: "cover", backgroundPosition: "center" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
               className="hover:scale-110 transition-all duration-300 ease-in-out"
               quality={50}
-              sizes="(max-width: 1024px) 100vw"
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
@@ -79,7 +83,7 @@ const ProjectsSection = () => {
             <Link
               href="https://www.ab-inbev.com/"
               target="_blank"
-              className="py-1 px-2 text-center font-extralight text-gray-300 hover:underline hover:underline-offset-4 md:text-lg"
+              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4 md:text-lg"
             >
               AB InBev
             </Link>

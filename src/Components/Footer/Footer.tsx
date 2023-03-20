@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <span className="font-extralight">Follow Me</span>
+          <span className="font-light">Follow Me</span>
           <div className="grayscale flex gap-4">
             <Link href="https://github.com/Thisisaarush" target="_blank">
               <Image src={github} alt="github" width={35} height={35} />

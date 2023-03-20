@@ -47,7 +47,7 @@ function Effects() {
 }
 
 const RainbowPrism = () => {
-  const [dpr, setDpr] = useState(2);
+  const [dpr, setDpr] = useState(0.8);
 
   const [Loading, setLoading] = useState(true);
 
@@ -74,12 +74,12 @@ const RainbowPrism = () => {
         dpr={dpr}
         orthographic
         gl={{ antialias: false }}
-        camera={{ position: [0, 0, 100], zoom: 80 }}
+        camera={{ position: [0, 0, 100], zoom: 100 }}
       >
         <color attach="background" args={["black"]} />
         <PerformanceMonitor
-          onDecline={() => setDpr(1.5)}
-          onIncline={() => setDpr(2)}
+          onDecline={() => setDpr(0.4)}
+          onIncline={() => setDpr(0.8)}
         >
           <Scene />
           <Effects />

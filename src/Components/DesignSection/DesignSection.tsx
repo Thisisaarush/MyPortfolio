@@ -5,9 +5,7 @@ const DesignSection = () => {
   return (
     <div className="uppercase flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center max-w-5xl m-auto gap-6 px-4 py-24">
-        <span className="text-xl text-gray-700 font-extralight">
-          Exploration
-        </span>
+        <span className="text-xl text-gray-700 font-light">Exploration</span>
 
         <div className="text-5xl md:text-7xl text-center">
           <span className="font-bold">Design</span>
