@@ -34,15 +34,16 @@ const ProjectsSection = () => {
           <Link
             href="https://shoez-store.vercel.app/"
             target="_blank"
-            className="md:opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out"
           >
             <Image
               src={shoe}
               alt="project"
               fill
               style={{ objectFit: "cover", backgroundPosition: "center" }}
-              className="hover:scale-110 transition-transform duration-300 ease-in-out"
+              className="hover:scale-110 transition-all duration-300 ease-in-out"
               quality={50}
+              sizes="(max-width: 1024px) 100vw"
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
@@ -61,15 +62,16 @@ const ProjectsSection = () => {
           <Link
             href="https://mybeesapp.com/"
             target="_blank"
-            className="md:opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out"
           >
             <Image
               src={bees}
               alt="project"
               fill
               style={{ objectFit: "cover", backgroundPosition: "center" }}
-              className="hover:scale-110 transition-transform duration-300 ease-in-out"
+              className="hover:scale-110 transition-all duration-300 ease-in-out"
               quality={50}
+              sizes="(max-width: 1024px) 100vw"
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">

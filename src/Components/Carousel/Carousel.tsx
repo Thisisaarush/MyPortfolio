@@ -70,7 +70,7 @@ export const Carousel = () => {
               ease: "easeInOut",
               duration: 1,
             }}
-            className="h-[400px] sm:h-[550px] md:h-[650px] w-screen max-w-5xl"
+            className="relative h-[350px] sm:h-[550px] md:h-[650px] w-screen max-w-5xl"
           >
             <Image
               src={data[heroImageNumber]}
