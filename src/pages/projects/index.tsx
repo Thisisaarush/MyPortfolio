@@ -31,7 +31,7 @@ const ProjectsPage = () => {
             <Link
               href="https://github.com/Thisisaarush"
               target="_blank"
-              className="text-base mt-10 w-fit py-2 px-4 border rounded-md hover:bg-white hover:text-black focus:bg-white focus:text-black  hover:underline-offset-4 transition-all font-semibold duration-150 ease-in-out"
+              className="text-base mt-10 w-fit py-2 px-4 border rounded-md hover:bg-black hover:text-white focus:bg-white focus:text-black  hover:underline-offset-4 transition-all font-semibold duration-150 ease-in-out"
             >
               Explore more
             </Link>
