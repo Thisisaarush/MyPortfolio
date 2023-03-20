@@ -37,7 +37,7 @@ function Effects() {
       <Bloom
         mipmapBlur
         levels={9}
-        intensity={1.5}
+        intensity={0.5}
         luminanceThreshold={1}
         luminanceSmoothing={1}
       />
