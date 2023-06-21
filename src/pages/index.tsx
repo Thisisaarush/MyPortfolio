@@ -6,6 +6,7 @@ import DesignSection from "@/Components/DesignSection/DesignSection";
 import HeroSection from "@/Components/HeroSection/HeroSection";
 import ProjectsSection from "@/Components/ProjectsSection/ProjectsSection";
 import RainbowPrism from "@/Components/RainbowPrism/RainbowPrism";
+import Particles from "@/Components/Particles/Particles";
 
 export default function Home() {
   return (
@@ -20,6 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="scroll-smooth">
+        {/* <Particles
+          className="absolute inset-0 z-10 animate-fade-in"
+          quantity={100}
+        /> */}
         <RainbowPrism />
         <HeroSection />
         <ProjectsSection />
