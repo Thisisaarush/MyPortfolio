@@ -13,7 +13,7 @@ const Navigation = () => {
         </Link>
       </li>
 
-      <li className="gap-4 sm:gap-8 flex justify-center items-center capitalize text-zinc-400">
+      <li className="gap-4 sm:gap-8 flex justify-center items-center capitalize text-white/70">
         <Link href="/projects" className="hover:text-white p-1">
           Projects
         </Link>
