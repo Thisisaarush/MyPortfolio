@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Particles from "../Particles/Particles";
 
 // Title data
 const title = ["Developer", "Designer", "Frontend", "Backend"];
@@ -19,16 +20,14 @@ const HeroSection = () => {
   }, [currentTitle]);
 
   return (
-    <div className="absolute text-white top-1/4 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center">
-      <span className="font-black uppercase text-6xl sm:text-8xl mb-6">
+    <div className="w-screen h-screen relative text-white bg-black flex flex-col gap-16 justify-center items-center px-4">
+      <span className="hero-section font-bold lowercase text-5xl sm:text-6xl md:text-9xl z-10">
         {title[currentTitle]}
       </span>
-      {/* <span className="capitalize hidden sm:block text-gray-300">
-        Aarush Tanwar - Full Stack Developer located in Jaipur, INDIA
+      <span className="text-center text-zinc-500 text-sm z-10 tracking-wide max-w-xl">
+        Hi, I'm Aarush, Experienced full stack developer building scalable solutions with Typescript, React(NextJS), Svelte, NodeJS etc.
       </span>
-      <span className="capitalize hidden sm:block text-gray-300">
-        Specialised in building unique and robust web apps
-      </span> */}
+      <Particles className="absolute inset-0" quantity={150} />
     </div>
   );
 };
