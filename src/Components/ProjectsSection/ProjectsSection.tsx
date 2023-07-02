@@ -1,14 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // images
 import shoe from "../../../public/shoe.jpg";
 import bees from "../../../public/bees.png";
-import Image from "next/image";
+import weather from "../../../public/weather.jpeg";
 
 const ProjectsSection = () => {
   return (
-    <div className="bg-black bg-opacity-90 text-white uppercase">
+    <div className="bg-black/90 text-white uppercase">
       <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-24">
         <span className="w-1/4 text-gray-300 text-xl font-light">
           Achievements
@@ -49,11 +50,11 @@ const ProjectsSection = () => {
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
-            <span className="font-bold text-2xl md:text-3xl">Shoez Store</span>
+            <span className="font-bold text-2xl">Shoez Store</span>
             <Link
               href="https://github.com/Thisisaarush/ShoezStore"
               target="_blank"
-              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4 md:text-lg"
+              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4"
             >
               Source Code
             </Link>
@@ -79,13 +80,43 @@ const ProjectsSection = () => {
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
-            <span className="font-bold text-2xl md:text-3xl">My Bees</span>
+            <span className="font-bold text-2xl">My Bees</span>
             <Link
               href="https://www.ab-inbev.com/"
               target="_blank"
-              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4 md:text-lg"
+              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4"
             >
               AB InBev
+            </Link>
+          </div>
+        </div>
+
+        <div className="relative flex w-full">
+          <Link
+            href="https://wheyther.vercel.app/"
+            target="_blank"
+            className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out relative h-[800px] md:h-[1000px] w-full sm:w-full overflow-hidden"
+          >
+            <Image
+              src={weather}
+              alt="project"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center" }}
+              className="hover:scale-110 transition-all duration-300 ease-in-out"
+              quality={50}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            />
+          </Link>
+          <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
+            <span className="font-bold text-2xl">Weather App</span>
+            <Link
+              href="https://github.com/Thisisaarush/Weather-App"
+              target="_blank"
+              className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4"
+            >
+              Source Code
             </Link>
           </div>
         </div>

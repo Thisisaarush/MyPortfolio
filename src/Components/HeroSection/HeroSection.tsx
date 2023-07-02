@@ -24,7 +24,7 @@ const HeroSection = () => {
       <span className="hero-section font-bold lowercase text-5xl sm:text-6xl md:text-9xl z-10">
         {title[currentTitle]}
       </span>
-      <span className="text-center text-zinc-500 text-sm z-10 tracking-wide max-w-xl">
+      <span className="text-center text-zinc-400 text-sm z-10 tracking-wide max-w-xl">
         Hi, I'm Aarush, Experienced full stack developer building scalable solutions with Typescript, React(NextJS), Svelte, NodeJS etc.
       </span>
       <Particles className="absolute inset-0" quantity={150} />
