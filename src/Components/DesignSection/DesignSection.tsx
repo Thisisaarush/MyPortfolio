@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "../Carousel/Carousel";
+import { DesignCarousel } from "../Carousel/DesignCarousel";
 
 const DesignSection = () => {
   return (
@@ -20,7 +20,7 @@ const DesignSection = () => {
         </ul>
       </div>
 
-      <Carousel />
+      <DesignCarousel />
     </div>
   );
 };
