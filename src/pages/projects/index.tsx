@@ -6,7 +6,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Head>
-        <title>Aarush Tanwar - Full Stack Developer</title>
+        <title>Aarush Tanwar - Projects</title>
         <meta
           name="description"
           content="Full Stack Developer, Designer Portfolio - Aarush Tanwar"
@@ -14,8 +14,8 @@ const ProjectsPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="uppercase mt-36">
-        <span className="font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
+      <div className="uppercase mt-36 min-h-screen">
+        <span className="cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
           projects
         </span>
 
@@ -31,7 +31,7 @@ const ProjectsPage = () => {
             <Link
               href="https://github.com/Thisisaarush"
               target="_blank"
-              className="text-base mt-10 w-fit py-2 px-4 border rounded-md hover:bg-black hover:text-white focus:bg-white focus:text-black  hover:underline-offset-4 transition-all font-semibold duration-150 ease-in-out"
+              className="text-base mt-10 w-fit py-2 px-4 border rounded-md hover:bg-black hover:text-white focus:bg-white focus:text-black  hover:underline-offset-4 transition-all font-semibold duration-150 ease-out"
             >
               Explore more
             </Link>
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
           <Link
             href="https://mybeesapp.com/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">MyBees.com</span>
             <div>
@@ -58,7 +58,7 @@ const ProjectsPage = () => {
           <Link
             href="https://shoez-store.vercel.app/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Shoez Store</span>
             <div>
@@ -74,7 +74,7 @@ const ProjectsPage = () => {
           <Link
             href="https://thisisaarush.github.io/Clothing-Store-Website/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Clothing Store</span>
             <div>
@@ -90,7 +90,7 @@ const ProjectsPage = () => {
           <Link
             href="https://wheyther.vercel.app/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Weather App</span>
             <div>
@@ -106,7 +106,7 @@ const ProjectsPage = () => {
           <Link
             href="https://tada-app.vercel.app/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Task App</span>
             <div>
@@ -122,7 +122,7 @@ const ProjectsPage = () => {
           <Link
             href="https://thisisaarush.github.io/GameHeaven/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Gaming Heaven</span>
             <div>
@@ -138,7 +138,7 @@ const ProjectsPage = () => {
           <Link
             href="https://github.com/Thisisaarush/CelebFaceRecognitionAiReactApp"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">AI Face Recog.</span>
             <div>
@@ -154,7 +154,7 @@ const ProjectsPage = () => {
           <Link
             href="https://thisisaarush.github.io/MathSprintGame/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Math Sprint</span>
             <div>
@@ -170,7 +170,7 @@ const ProjectsPage = () => {
           <Link
             href="https://thisisaarush.github.io/twitter-clone/"
             target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-300 ease-in-out"
+            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
           >
             <span className="font-bold w-1/2 md:w-1/3">Twitter Clone</span>
             <div>
