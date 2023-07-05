@@ -6,7 +6,7 @@ export const Back = () => {
   return (
     <div
       onClick={() => router.back()}
-      className="py-2 cursor-pointer underline underline-offset-4 decoration-black/20 hover:decoration-black"
+      className="py-2 cursor-pointer underline underline-offset-2 decoration-black/20 hover:decoration-black"
     >
       &larr; back
     </div>

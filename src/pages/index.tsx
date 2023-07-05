@@ -6,13 +6,13 @@ import "cal-sans";
 import DesignSection from "@/Components/DesignSection/DesignSection";
 import HeroSection from "@/Components/HeroSection/HeroSection";
 import ProjectsSection from "@/Components/ProjectsSection/ProjectsSection";
-import RainbowPrism from "@/Components/RainbowPrism/RainbowPrism";
+// import RainbowPrism from "@/Components/RainbowPrism/RainbowPrism";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Aarush Tanwar - Full Stack Developer</title>
+        <title>Aarush Tanwar</title>
         <meta
           name="description"
           content="Full Stack Developer, Designer Portfolio - Aarush Tanwar"

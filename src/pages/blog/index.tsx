@@ -1,3 +1,4 @@
+import { BlogLink } from "@/Components/BlogLink/BlogLink";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -13,12 +14,12 @@ const Blog = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="uppercase mt-36 min-h-screen">
-        <span className="cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
+      <div className="mt-36 min-h-screen">
+        <span className="uppercase cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
           blog
         </span>
 
-        <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-16">
+        <div className="uppercase flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-16">
           <span className="w-1/3 text-xl font-extralight">
             Thoughts / Opinions
           </span>
@@ -29,6 +30,10 @@ const Blog = () => {
             </div>
             <span className="font-extralight">sometimes i write something</span>
           </div>
+        </div>
+
+        <div className="flex flex-col max-w-5xl m-auto gap-6 px-4 py-16">
+          {/* <BlogLink title={""} description={""} date={""} /> */}
         </div>
       </div>
     </>
