@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import Particles from "../Particles/Particles";
 
@@ -20,7 +18,7 @@ const HeroSection = () => {
   }, [currentTitle]);
 
   return (
-    <div className="w-screen h-screen relative bg-black flex flex-col gap-16 justify-center items-center px-4">
+    <div className="w-screen h-screen relative bg-gradient-to-br from-black via-black/90 to-black flex flex-col gap-16 justify-center items-center px-4">
       <span className="hero-section font-bold lowercase text-white text-5xl sm:text-6xl md:text-9xl z-10">
         {title[currentTitle]}
       </span>
@@ -28,7 +26,7 @@ const HeroSection = () => {
         Hi, I'm Aarush, Experienced full stack developer building scalable
         solutions with Typescript, React(NextJS), Svelte, NodeJS etc.
       </span>
-      <Particles className="absolute inset-0" quantity={150} />
+      <Particles className="absolute inset-0" quantity={200} />
     </div>
   );
 };
