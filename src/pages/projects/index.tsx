@@ -6,7 +6,7 @@ const projectsData = [
   {
     title: "MyBees.com",
     codeTitle: "AbInbev",
-    liveLink: "https://www.ab-inbev.com/",
+    liveLink: "https://mybeesapp.com/",
     githubLink: "https://www.ab-inbev.com/",
   },
   {
@@ -98,21 +98,27 @@ const ProjectsPage = () => {
         </div>
 
         <div className="max-w-5xl m-auto mt-16 flex flex-col text-xl">
-          {projectsData.map(({ title, codeTitle, liveLink, githubLink }) => (
-            <div className="flex hover:bg-gray-100 border-b">
-              <Link href={liveLink} target="_blank" className="w-1/3 px-8 py-4">
-                {title}
-              </Link>
+          {projectsData.map(
+            ({ title, codeTitle, liveLink, githubLink }, index) => (
+              <div className="flex hover:bg-gray-100 border-b" key={index}>
+                <Link
+                  href={liveLink}
+                  target="_blank"
+                  className="w-1/3 px-8 py-4"
+                >
+                  {title}
+                </Link>
 
-              <Link
-                href={githubLink}
-                target="_blank"
-                className="font-extralight hover:underline px-8 py-4"
-              >
-                {codeTitle}
-              </Link>
-            </div>
-          ))}
+                <Link
+                  href={githubLink}
+                  target="_blank"
+                  className="font-extralight hover:underline px-8 py-4"
+                >
+                  {codeTitle}
+                </Link>
+              </div>
+            )
+          )}
         </div>
       </div>
     </>
