@@ -2,6 +2,64 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 
+const projectsData = [
+  {
+    title: "MyBees.com",
+    codeTitle: "AbInbev",
+    liveLink: "https://www.ab-inbev.com/",
+    githubLink: "https://www.ab-inbev.com/",
+  },
+  {
+    title: "Shoez Store",
+    codeTitle: "Source Code",
+    liveLink: "https://shoez-store.vercel.app/",
+    githubLink: "https://github.com/Thisisaarush/ShoezStore",
+  },
+  {
+    title: "Clothing Store",
+    codeTitle: "Source Code",
+    liveLink: "https://thisisaarush.github.io/Clothing-Store-Website/",
+    githubLink: "https://github.com/Thisisaarush/Clothing-Store-Website",
+  },
+  {
+    title: "Weather App",
+    codeTitle: "Source Code",
+    liveLink: "https://wheyther.vercel.app/",
+    githubLink: "https://github.com/Thisisaarush/Weather-App",
+  },
+  {
+    title: "Task App",
+    codeTitle: "Source Code",
+    liveLink: "https://tada-app.vercel.app/",
+    githubLink: "https://github.com/Thisisaarush/Tada",
+  },
+  {
+    title: "Gaming Heaven",
+    codeTitle: "Source Code",
+    liveLink: "https://thisisaarush.github.io/GameHeaven/",
+    githubLink: "https://github.com/Thisisaarush/GameHeaven",
+  },
+  {
+    title: "AI Face Recog.",
+    codeTitle: "Source Code",
+    liveLink: "https://github.com/Thisisaarush/CelebFaceRecognitionAiReactApp",
+    githubLink:
+      "https://github.com/Thisisaarush/CelebFaceRecognitionAiReactApp",
+  },
+  {
+    title: "Math Sprint Game",
+    codeTitle: "Source Code",
+    liveLink: "https://thisisaarush.github.io/MathSprintGame/",
+    githubLink: "https://github.com/Thisisaarush/MathSprintGame",
+  },
+  {
+    title: "Twitter UI Clone",
+    codeTitle: "Source Code",
+    liveLink: "https://thisisaarush.github.io/twitter-clone/",
+    githubLink: "https://github.com/Thisisaarush/twitter-clone",
+  },
+];
+
 const ProjectsPage = () => {
   return (
     <>
@@ -14,12 +72,13 @@ const ProjectsPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="uppercase mt-36 min-h-screen">
-        <span className="cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
+
+      <div className="mt-36 min-h-screen">
+        <span className="uppercase cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
           projects
         </span>
 
-        <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-16">
+        <div className="uppercase flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-16">
           <span className="w-1/4 text-xl font-extralight">Achievements</span>
 
           <div className="flex flex-col text-5xl md:text-7xl">
@@ -39,150 +98,21 @@ const ProjectsPage = () => {
         </div>
 
         <div className="max-w-5xl m-auto mt-16 flex flex-col text-xl">
-          <Link
-            href="https://mybeesapp.com/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">MyBees.com</span>
-            <div>
+          {projectsData.map(({ title, codeTitle, liveLink, githubLink }) => (
+            <div className="flex hover:bg-gray-100 border-b">
+              <Link href={liveLink} target="_blank" className="w-1/3 px-8 py-4">
+                {title}
+              </Link>
+
               <Link
-                href="https://www.ab-inbev.com/"
+                href={githubLink}
                 target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
+                className="font-extralight hover:underline px-8 py-4"
               >
-                Ab Inbev
+                {codeTitle}
               </Link>
             </div>
-          </Link>
-          <Link
-            href="https://shoez-store.vercel.app/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Shoez Store</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/ShoezStore"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://thisisaarush.github.io/Clothing-Store-Website/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Clothing Store</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/Clothing-Store-Website"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://wheyther.vercel.app/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Weather App</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/Weather-App"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://tada-app.vercel.app/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Task App</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/Tada"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://thisisaarush.github.io/GameHeaven/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Gaming Heaven</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/GameHeaven"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://github.com/Thisisaarush/CelebFaceRecognitionAiReactApp"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">AI Face Recog.</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/CelebFaceRecognitionAiReactApp"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://thisisaarush.github.io/MathSprintGame/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Math Sprint</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/MathSprintGame"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
-          <Link
-            href="https://thisisaarush.github.io/twitter-clone/"
-            target="_blank"
-            className="flex gap-4 border-t py-4 px-6 hover:bg-black hover:text-gray-100 transition-colors duration-150 ease-out"
-          >
-            <span className="font-bold w-1/2 md:w-1/3">Twitter Clone</span>
-            <div>
-              <Link
-                href="https://github.com/Thisisaarush/twitter-clone"
-                target="_blank"
-                className="font-extralight hover:underline hover:underline-offset-4"
-              >
-                Source Code
-              </Link>
-            </div>
-          </Link>
+          ))}
         </div>
       </div>
     </>
