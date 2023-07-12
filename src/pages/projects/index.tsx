@@ -104,7 +104,7 @@ const ProjectsPage = () => {
                 <Link
                   href={liveLink}
                   target="_blank"
-                  className="w-1/3 px-8 py-4"
+                  className="w-1/2 sm:w-1/3 px-8 py-4"
                 >
                   {title}
                 </Link>

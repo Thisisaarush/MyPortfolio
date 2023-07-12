@@ -1,4 +1,5 @@
 import { BlogLink } from "@/Components/BlogLink/BlogLink";
+import { blogData } from "@/blogContent/data";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -33,7 +34,11 @@ const Blog = () => {
         </div>
 
         <div className="flex flex-col max-w-5xl m-auto gap-6 px-4 py-16">
-          {/* <BlogLink title={""} description={""} date={""} /> */}
+          {/* {blogData.map(({ title, description, date, slug }) => (
+            <Link href={`/blog/${slug}`}>
+              <BlogLink title={title} description={description} date={date} />
+            </Link>
+          ))} */}
         </div>
       </div>
     </>
