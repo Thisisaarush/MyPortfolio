@@ -21,9 +21,9 @@ const Navigation = () => {
       </li>
 
       <li className="gap-4 sm:gap-8 flex justify-center items-center capitalize text-white/70">
-        <Link href="/blog" className="hover:text-white p-1">
+        {/* <Link href="/blog" className="hover:text-white p-1">
           Blog
-        </Link>
+        </Link> */}
         <Link href="/projects" className="hover:text-white p-1">
           Projects
         </Link>
