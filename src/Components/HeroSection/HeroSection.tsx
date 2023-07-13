@@ -18,7 +18,7 @@ const HeroSection = () => {
   }, [currentTitle]);
 
   return (
-    <div className="w-screen h-screen relative bg-gradient-to-br from-black via-black/90 to-black flex flex-col gap-16 justify-center items-center px-4">
+    <div className="w-screen h-screen relative bg-gradient-to-br from-black via-[#191919] to-black flex flex-col gap-16 justify-center items-center px-4">
       <span className="hero-section font-bold lowercase text-white text-5xl sm:text-6xl md:text-9xl z-10">
         {title[currentTitle]}
       </span>
