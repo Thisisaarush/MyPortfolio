@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Particles from "../Particles/Particles";
 
 // Title data
-const title = ["Developer", "Designer", "Frontend", "Backend"];
+const title = ["Developer", "Frontend", "Backend"];
 
 const HeroSection = () => {
   const [currentTitle, setCurrentTitle] = useState(0);
