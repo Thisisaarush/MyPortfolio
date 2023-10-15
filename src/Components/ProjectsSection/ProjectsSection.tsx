@@ -110,7 +110,7 @@ const ProjectsSection = () => {
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
-            <span className="font-bold text-2xl">Weather App</span>
+            <span className="font-bold text-2xl">Discooord</span>
             <Link
               href="https://github.com/Thisisaarush/Discooord"
               target="_blank"
