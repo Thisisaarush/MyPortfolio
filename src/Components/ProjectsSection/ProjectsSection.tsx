@@ -5,7 +5,7 @@ import Image from "next/image";
 // images
 import shoe from "../../../public/shoe.jpg";
 import bees from "../../../public/bees.png";
-import weather from "../../../public/weather.jpeg";
+import discord from "../../../public/discord.png";
 
 const ProjectsSection = () => {
   return (
@@ -93,12 +93,12 @@ const ProjectsSection = () => {
 
         <div className="relative flex w-full">
           <Link
-            href="https://wheyther.vercel.app/"
+            href="https://discooord.vercel.app/"
             target="_blank"
             className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out relative h-[800px] md:h-[1000px] w-full sm:w-full overflow-hidden"
           >
             <Image
-              src={weather}
+              src={discord}
               alt="project"
               fill
               style={{ objectFit: "cover", objectPosition: "center" }}
@@ -112,7 +112,7 @@ const ProjectsSection = () => {
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
             <span className="font-bold text-2xl">Weather App</span>
             <Link
-              href="https://github.com/Thisisaarush/Weather-App"
+              href="https://github.com/Thisisaarush/Discooord"
               target="_blank"
               className="py-1 px-2 text-center font-light hover:underline hover:underline-offset-4"
             >

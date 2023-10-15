@@ -16,6 +16,12 @@ const projectsData = [
     githubLink: "https://github.com/Thisisaarush/ShoezStore",
   },
   {
+    title: "Discooord",
+    codeTitle: "Source Code",
+    liveLink: "https://discooord.vercel.app/",
+    githubLink: "https://github.com/Thisisaarush/Discooord",
+  },
+  {
     title: "Clothing Store",
     codeTitle: "Source Code",
     liveLink: "https://thisisaarush.github.io/Clothing-Store-Website/",
