@@ -1,20 +1,12 @@
-import Head from "next/head";
-import Link from "next/link";
-import { BlogLink } from "@/Components/BlogLink/BlogLink";
-import { blogData } from "@/blogContent/data";
+"use client"
+
+import Link from "next/link"
+import { BlogLink } from "@/components/BlogLink/BlogLink"
+import { blogData } from "@/blogContent/data"
 
 const Blog = () => {
   return (
     <>
-      <Head>
-        <title>Aarush Tanwar - Blog</title>
-        <meta
-          name="description"
-          content="Full Stack Developer, Designer Portfolio - Aarush Tanwar"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="mt-36 min-h-screen">
         <span className="uppercase cursor-default font-black text-9xl md:text-[200px] lg:text-[300px] m-auto text-gray-100 text-center flex justify-center items-center">
           blog
@@ -33,16 +25,16 @@ const Blog = () => {
           </div>
         </div>
 
-        <div className="flex flex-col max-w-5xl m-auto gap-6 px-4 py-16">
-          {/* {blogData.map(({ title, description, date, slug }) => (
+        {/* <div className="flex flex-col max-w-5xl m-auto gap-6 px-4 py-16">
+          {blogData.map(({ title, description, date, slug }) => (
             <Link href={`/blog/${slug}`} key={slug}>
               <BlogLink title={title} description={description} date={date} />
             </Link>
-          ))} */}
-        </div>
+          ))}
+        </div> */}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

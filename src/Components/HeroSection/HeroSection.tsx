@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
-import Particles from "../Particles/Particles";
+"use client"
+
+import React, { useEffect, useState } from "react"
+import Particles from "../Particles/Particles"
 
 // Title data
-const title = ["Developer", "Frontend", "Backend"];
+const title = ["Developer", "Frontend", "Backend"]
 
 const HeroSection = () => {
-  const [currentTitle, setCurrentTitle] = useState(0);
+  const [currentTitle, setCurrentTitle] = useState(0)
 
   useEffect(() => {
     setTimeout(() => {
       if (currentTitle >= title.length - 1) {
-        setCurrentTitle(0);
+        setCurrentTitle(0)
       } else {
-        setCurrentTitle(currentTitle + 1);
+        setCurrentTitle(currentTitle + 1)
       }
-    }, 4000);
-  }, [currentTitle]);
+    }, 4000)
+  }, [currentTitle])
 
   return (
     <div className="w-screen h-screen relative bg-gradient-to-br from-black via-[#191919] to-black flex flex-col gap-16 justify-center items-center px-4">
@@ -28,7 +30,7 @@ const HeroSection = () => {
       </span>
       <Particles className="absolute inset-0" quantity={200} />
     </div>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

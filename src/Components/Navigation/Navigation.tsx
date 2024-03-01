@@ -1,12 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+"use client"
 
-import Logo from "../../../public/Logo.png";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
+import Logo from "../../../public/Logo.png"
 
 const Navigation = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <ul
@@ -35,7 +37,7 @@ const Navigation = () => {
         </Link>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

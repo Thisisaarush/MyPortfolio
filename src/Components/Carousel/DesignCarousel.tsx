@@ -1,17 +1,19 @@
-import Image from "next/image";
-import { Carousel } from "@material-tailwind/react";
+"use client"
+
+import Image from "next/image"
+import { Carousel } from "@material-tailwind/react"
 
 // images
-import ecomm1 from "../../../public/mockups/ecomm-1.png";
-import ecomm2 from "../../../public/mockups/ecomm-2.png";
-import ecomm3 from "../../../public/mockups/ecomm-3.png";
-import food1 from "../../../public/mockups/food-1.png";
-import food2 from "../../../public/mockups/food-2.png";
-import food3 from "../../../public/mockups/food-3.png";
-import home1 from "../../../public/mockups/home-1.png";
-import home2 from "../../../public/mockups/home-2.png";
-import smart1 from "../../../public/mockups/smart-1.png";
-import smart2 from "../../../public/mockups/smart-2.png";
+import ecomm1 from "../../../public/mockups/ecomm-1.png"
+import ecomm2 from "../../../public/mockups/ecomm-2.png"
+import ecomm3 from "../../../public/mockups/ecomm-3.png"
+import food1 from "../../../public/mockups/food-1.png"
+import food2 from "../../../public/mockups/food-2.png"
+import food3 from "../../../public/mockups/food-3.png"
+import home1 from "../../../public/mockups/home-1.png"
+import home2 from "../../../public/mockups/home-2.png"
+import smart1 from "../../../public/mockups/smart-1.png"
+import smart2 from "../../../public/mockups/smart-2.png"
 
 export const DesignCarousel = () => {
   return (
@@ -84,5 +86,5 @@ export const DesignCarousel = () => {
         className="h-full w-full object-cover"
       />
     </Carousel>
-  );
-};
+  )
+}

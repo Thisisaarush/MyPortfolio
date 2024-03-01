@@ -1,4 +1,4 @@
-import First from "./First.mdx";
+import First from "./First.mdx"
 
 export const blogData = [
   {
@@ -10,4 +10,4 @@ export const blogData = [
     description:
       "In this article i will be sharing my own experience of learning & getting the first job as a software engineer.",
   },
-];
+]
