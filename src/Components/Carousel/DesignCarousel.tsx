@@ -18,6 +18,7 @@ import smart2 from "../../../public/mockups/smart-2.png"
 export const DesignCarousel = () => {
   return (
     <Carousel
+      placeholder="Designs"
       autoplay
       loop
       className="max-w-5xl lg:rounded-xl"
