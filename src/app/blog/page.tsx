@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { BlogLink } from "@/components/BlogLink/BlogLink"
+import { BlogLink } from "@/Components/BlogLink/BlogLink"
 import { blogData } from "@/blogContent/data"
 
 const Blog = () => {

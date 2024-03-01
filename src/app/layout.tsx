@@ -2,8 +2,8 @@ import "@/styles/globals.css"
 import { Metadata } from "next"
 
 // components
-import Navigation from "@/components/Navigation/Navigation"
-import Footer from "@/components/Footer/Footer"
+import Navigation from "@/Components/Navigation/Navigation"
+import Footer from "@/Components/Footer/Footer"
 
 export default function RootLayout({
   children,
