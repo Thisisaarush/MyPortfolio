@@ -17,7 +17,7 @@ const projectsData = [
   {
     title: "Discooord",
     codeTitle: "Source Code",
-    liveLink: "https://discooord.vercel.app/",
+    liveLink: "https://discooord-as-a-service.onrender.com/",
     githubLink: "https://github.com/Thisisaarush/Discooord",
   },
   {
