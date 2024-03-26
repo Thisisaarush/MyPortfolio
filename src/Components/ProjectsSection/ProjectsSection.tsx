@@ -93,7 +93,7 @@ const ProjectsSection = () => {
 
         <div className="relative flex w-full">
           <Link
-            href="https://discooord.vercel.app/"
+            href="https://discooord-as-a-service.onrender.com"
             target="_blank"
             className="md:opacity-60 hover:opacity-100 transition-all duration-300 ease-in-out relative h-[800px] md:h-[1000px] w-full sm:w-full overflow-hidden"
           >
