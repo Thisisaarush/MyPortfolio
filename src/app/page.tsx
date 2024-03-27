@@ -1,10 +1,11 @@
 import "cal-sans"
 
 // components
-import DesignSection from "@/Components/DesignSection/DesignSection"
 import HeroSection from "@/Components/HeroSection/HeroSection"
+import RainbowPrism from "@/Components/RainbowPrism/RainbowPrism"
+import PreviousCompanies from "@/Components/PreviousCompanies/PreviousCompanies"
 import ProjectsSection from "@/Components/ProjectsSection/ProjectsSection"
-// import RainbowPrism from "@/Components/RainbowPrism/RainbowPrism";
+import DesignSection from "@/Components/DesignSection/DesignSection"
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
       {/* <RainbowPrism /> */}
       <ProjectsSection />
       <DesignSection />
+      {/* <PreviousCompanies /> */}
     </main>
   )
 }

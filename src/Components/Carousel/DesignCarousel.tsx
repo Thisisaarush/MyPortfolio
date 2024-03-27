@@ -21,7 +21,7 @@ export const DesignCarousel = () => {
       placeholder="Designs"
       autoplay
       loop
-      className="max-w-5xl lg:rounded-xl"
+      className="max-w-7xl lg:rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -35,6 +35,8 @@ export const DesignCarousel = () => {
           ))}
         </div>
       )}
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
     >
       <Image
         src={ecomm1}
