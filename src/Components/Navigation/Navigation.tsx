@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-import Logo from "../../../public/Logo.png"
+import AarushTanwarLOGO from "../../../public/AarushTanwar_LOGO.svg"
 
 const Navigation = () => {
   const pathname = usePathname()
@@ -18,7 +18,7 @@ const Navigation = () => {
     >
       <li>
         <Link href="/">
-          <Image src={Logo} alt="logo" width={50} height={50} />
+          <Image src={AarushTanwarLOGO} alt="logo" width={50} height={50} />
         </Link>
       </li>
 
